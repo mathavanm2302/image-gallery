@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">PIXEL<span>.</span></a>
+    <p>Discover the world through photographs</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <span class="eyebrow">VISUAL COLLECTION</span>
+      <h1>Moments in <span>Focus.</span></h1>
+      <p>A collection of beautiful places and little moments.</p>
+    </section>
+
+    <nav class="filters" aria-label="Image categories">
+      <button class="filter active" data-category="all">All Photos</button>
+      <button class="filter" data-category="nature">Nature</button>
+      <button class="filter" data-category="city">Architecture</button>
+      <button class="filter" data-category="wildlife">Wildlife</button>
+    </nav>
+
+    <section id="gallery" class="gallery" aria-label="Photo gallery"></section>
+    <p id="empty" class="empty" hidden>No photos in this category.</p>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog"
+       aria-modal="true" aria-label="Image viewer" hidden>
+    <button id="close" class="close" aria-label="Close image viewer">&times;</button>
+    <button id="prev" class="nav prev" aria-label="Previous image">&#10094;</button>
+    <figure class="viewer">
+      <img id="fullImage" src="" alt="">
+      <figcaption>
+        <h2 id="imageTitle"></h2>
+        <p id="imageCount"></p>
+      </figcaption>
+    </figure>
+    <button id="next" class="nav next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer>Made with creativity &amp; JavaScript © 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
